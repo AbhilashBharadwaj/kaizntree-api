@@ -1,0 +1,11 @@
+# Django project files
+*.pyc
+*.pyo
+__pycache__/
+*.sqlite3
+/staticfiles
+# Virtual environment
+venv/
+
+.env
+
