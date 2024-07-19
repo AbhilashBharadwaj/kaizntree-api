@@ -84,8 +84,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 DATABASES = {"default": DEFAULT_DB_URL}
-if DATABASES["default"] != DEFAULT_DB_URL:
-    DATABASES["default"]["ENGINE"] = "django.db.backends.postgresql"
+# if DATABASES["default"] != DEFAULT_DB_URL:
+#     DATABASES["default"]["ENGINE"] = "django.db.backends.postgresql"
 
 
 # Password validation
@@ -117,15 +117,15 @@ REST_FRAMEWORK = {
     ),
 }
 
-CACHES = {
-    "default": {
-        "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": os.environ.get("REDIS_URL", "redis://127.0.0.1:6379/1"),
-        "OPTIONS": {
-            "CLIENT_CLASS": "django_redis.client.DefaultClient",
-        },
-    }
-}
+# CACHES = {
+#     "default": {
+#         "BACKEND": "django_redis.cache.RedisCache",
+#         "LOCATION": os.environ.get("REDIS_URL", "redis://127.0.0.1:6379/1"),
+#         "OPTIONS": {
+#             "CLIENT_CLASS": "django_redis.client.DefaultClient",
+#         },
+#     }
+# }
 
 CORS_ALLOW_ALL_ORIGINS = True
 
