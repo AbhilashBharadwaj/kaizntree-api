@@ -24,7 +24,7 @@ DEFAULT_DB_URL = dj_database_url.config(
 )
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
